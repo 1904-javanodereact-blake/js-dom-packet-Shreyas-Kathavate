@@ -119,7 +119,7 @@ function myskills() {
 function favoriteColor() {
     const colors = document.getElementsByName("favoriteColor");
     for (let i = 0; i < colors.length; i++) {
-        col[i].addEventListener("click", function() {
+        colors[i].addEventListener("click", function() {
             alert(`So you like ${colors[i].value} more than ${colors[i].style.backgroundColor}`)
             for (let j = 0; colors.length; j++) {
                 colors[j].style.backgroundColor = `${colors[i].value}`;
